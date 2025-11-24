@@ -3,27 +3,29 @@
 # This script verifies model loading, generation, and timing.
 
 import time
-from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM, QuantizedCache
 
-def run_baseline(prompt="Hello, how are you?"):
+def run_baseline(prompt="Rock music is cool because"):
     print("Loading model...")
     start_load = time.time()
-    
+
     tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
-    model = AutoModelForCausalLM.from_pretrained("distilgpt2")
+    model = AutoModelForCausalLM.from_pretrained("distilgpt2", dtype=torch.float16, device_map="auto")
     
     load_time = time.time() - start_load
     print(f"Model loaded in {load_time:.2f} seconds.\n")
 
     print(f"Generating text for prompt: {prompt!r}")
-    inputs = tokenizer(prompt, return_tensors="pt")
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     start_gen = time.time()
     output = model.generate(
-        **inputs,
+        **inputs,      
+        do_sample=False,
         max_new_tokens=50,
-        do_sample=True,
-        temperature=0.7,
+        cache_implementation="quantized",
+        cache_config={"backend": "hqq"}
     )
     gen_time = time.time() - start_gen
 
