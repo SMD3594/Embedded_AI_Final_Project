@@ -1,0 +1,91 @@
+USER: hello
+[2025-11-20 10:52:58] USER: hello
+[2025-11-20 10:52:58] BOT: This is a placeholder reply.
+[2025-11-20 11:04:44] USER: hello
+[2025-11-20 11:04:44] BOT: This is a placeholder reply.
+[2025-11-20 11:04:46] USER: hi
+[2025-11-20 11:04:46] BOT: This is a placeholder reply.
+[2025-11-20 11:04:50] USER: my cat
+[2025-11-20 11:04:50] BOT: This is a placeholder reply.
+[2025-11-20 11:04:52] USER: cat
+[2025-11-20 11:04:52] BOT: This is a placeholder reply.
+[2025-11-20 11:04:55] USER: so cute
+[2025-11-20 11:04:55] BOT: This is a placeholder reply.
+[2025-11-20 11:05:02] USER: my cat
+[2025-11-20 11:05:02] BOT: This is a placeholder reply.
+[2025-11-20 11:05:03] USER: meow
+[2025-11-20 11:05:03] BOT: This is a placeholder reply.
+[2025-11-20 11:07:48] USER: hi
+[2025-11-20 11:07:48] BOT: This is a placeholder reply.
+[2025-11-20 11:07:50] USER: hello
+[2025-11-20 11:07:50] BOT: This is a placeholder reply.
+[2025-11-20 11:07:55] USER: test 1
+[2025-11-20 11:07:55] BOT: This is a placeholder reply.
+[2025-11-20 11:07:57] USER: test 2
+[2025-11-20 11:07:57] BOT: This is a placeholder reply.
+[2025-11-20 11:08:00] USER: test 3
+[2025-11-20 11:08:00] BOT: This is a placeholder reply.
+[2025-11-20 11:08:02] USER: test
+[2025-11-20 11:08:02] BOT: This is a placeholder reply.
+[2025-11-20 11:08:05] USER: test 5
+[2025-11-20 11:08:05] BOT: This is a placeholder reply.
+[2025-11-20 11:10:40] USER: hello
+[2025-11-20 11:10:40] BOT: This is a placeholder reply.
+[2025-11-20 11:10:41] USER: hi
+[2025-11-20 11:10:41] BOT: This is a placeholder reply.
+[2025-11-20 11:10:44] USER: test 1
+[2025-11-20 11:10:44] BOT: This is a placeholder reply.
+[2025-11-20 11:10:47] USER: test 2
+[2025-11-20 11:10:47] BOT: This is a placeholder reply.
+[2025-11-20 11:10:49] USER: test 3
+[2025-11-20 11:10:49] BOT: This is a placeholder reply.
+[2025-11-20 11:10:50] USER: test 4
+[2025-11-20 11:10:50] BOT: This is a placeholder reply.
+[2025-11-20 11:10:52] USER: test 5
+[2025-11-20 11:10:52] BOT: This is a placeholder reply.
+[2025-11-20 11:26:10] USER: hello
+[2025-11-20 11:26:10] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:16] USER: hello
+[2025-11-20 11:27:16] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:26] USER: test
+[2025-11-20 11:27:26] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:28] USER: test 2
+[2025-11-20 11:27:28] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:30] USER: test 3
+[2025-11-20 11:27:30] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:32] USER: test4
+[2025-11-20 11:27:32] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:34] USER: test5
+[2025-11-20 11:27:34] BOT: This is a placeholder model reply.
+[2025-11-20 11:27:38] USER: test6
+[2025-11-20 11:27:38] BOT: This is a placeholder model reply.
+[2025-11-20 11:38:58] USER: hello
+[2025-11-20 11:38:58] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-20 11:39:23] USER: test2
+[2025-11-20 11:39:23] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-20 11:39:25] USER: test3
+[2025-11-20 11:39:25] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-20 11:39:26] USER: test4
+[2025-11-20 11:39:26] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-20 11:39:28] USER: test5
+[2025-11-20 11:39:28] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-20 11:39:31] USER: test6
+[2025-11-20 11:39:31] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-21 10:26:24] USER: hello 
+[2025-11-21 10:26:24] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-21 10:26:26] USER: hi
+[2025-11-21 10:26:26] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:08] USER: hello
+[2025-11-24 11:22:08] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:20] USER: test2
+[2025-11-24 11:22:20] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:22] USER: test3
+[2025-11-24 11:22:22] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:23] USER: test4
+[2025-11-24 11:22:23] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:25] USER: test5
+[2025-11-24 11:22:25] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:22:27] USER: test6
+[2025-11-24 11:22:27] BOT: This is where the real DistilGPT-2 reply will go.
+[2025-11-24 11:23:16] USER: test7
+[2025-11-24 11:23:16] BOT: This is where the real DistilGPT-2 reply will go.
