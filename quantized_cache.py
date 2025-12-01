@@ -6,7 +6,7 @@ import time
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, QuantizedCache
 
-def run_baseline(prompt="Rock music is cool because"):
+def run_baseline(prompt):
     print("Loading model...")
     start_load = time.time()
 
@@ -29,7 +29,7 @@ def run_baseline(prompt="Rock music is cool because"):
     output = model.generate(
         **inputs, 
         do_sample=False, 
-        max_new_tokens=20, 
+        max_new_tokens=50, 
         cache_implementation="quantized", 
         cache_config={"backend": "hqq", "nbits": 8}# Change nbits to adjust Quantize Level (1,2,3,4,8)
     )
@@ -37,12 +37,13 @@ def run_baseline(prompt="Rock music is cool because"):
     gen_time = time.time() - start_gen
 
     decoded = tokenizer.decode(output[0], skip_special_tokens=True)
-    print("\n=== Generated Output ===")
-    print(decoded)
-    print("========================\n")
+    return decoded
+    # print("\n=== Generated Output ===")
+    # print(decoded)
+    # print("========================\n")
 
-    print(f"Generation time: {gen_time:.2f} seconds")
-    print(f"Avg time per token: {gen_time / 50:.4f} s/token")
+    # print(f"Generation time: {gen_time:.2f} seconds")
+    # print(f"Avg time per token: {gen_time / 50:.4f} s/token")
 
-if __name__ == "__main__":
-    run_baseline()
+# if __name__ == "__main__":
+#     run_baseline()

@@ -1,5 +1,5 @@
 import datetime
-from model_backend import generate_reply_from_model
+from quantized_cache import run_baseline
 
 def log_message(role, message):
 
@@ -13,8 +13,8 @@ def log_message(role, message):
 print("Simple Chatbot (type 'quit' to exit)")
 
 # Storing recent messages and only keeping last 5 user+bot pairs
-history = [] 
-MAX_TURNS = 5
+# history = [] 
+# MAX_TURNS = 5
 
 # Asks user for text
 while True:
@@ -26,22 +26,22 @@ while True:
         break
     
     # Add user message to history
-    history.append(("user", user_input))
+    # history.append(("user", user_input))
     # Logging user's message
     log_message("user", user_input)
 
     # Ask model for a reply
-    reply = generate_reply_from_model(user_input, history)
+    reply = run_baseline(user_input)
     print("Bot:", reply)
     
    
-    history.append(("bot", reply))
+    # history.append(("bot", reply))
     # Logging bot's reply
     log_message("bot", reply)
 
-    # sliding window
-    if len(history) > MAX_TURNS * 2:
-        history = history[-MAX_TURNS * 2:]
+    # # sliding window
+    # if len(history) > MAX_TURNS * 2:
+    #     history = history[-MAX_TURNS * 2:]
 
    
 
