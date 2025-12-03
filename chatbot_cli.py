@@ -1,5 +1,8 @@
 import datetime
 from quantized_cache import run_baseline
+from paged_cache import run_paged as run_baseline
+# from rotating_cache import run_rotating as run_baseline
+
 
 def log_message(role, message):
 

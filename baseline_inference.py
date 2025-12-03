@@ -4,7 +4,6 @@
 
 import time
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from kv_cache_manager import PagedKVCache, RotatingKVCache
 
 def run_baseline(prompt="Hello, how are you?"):
     print("Loading model...")
