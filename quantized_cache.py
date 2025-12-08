@@ -38,12 +38,12 @@ def run_baseline(prompt):
 
     decoded = tokenizer.decode(output[0], skip_special_tokens=True)
     return decoded
-    # print("\n=== Generated Output ===")
-    # print(decoded)
-    # print("========================\n")
+    print("\n=== Generated Output ===")
+    print(decoded)
+    print("========================\n")
 
-    # print(f"Generation time: {gen_time:.2f} seconds")
-    # print(f"Avg time per token: {gen_time / 50:.4f} s/token")
+    print(f"Generation time: {gen_time:.2f} seconds")
+    print(f"Avg time per token: {gen_time / 50:.4f} s/token")
 
-# if __name__ == "__main__":
-#     run_baseline()
+if __name__ == "__main__":
+     run_baseline("Hello, my name is")
