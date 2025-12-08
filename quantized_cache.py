@@ -11,17 +11,19 @@ def run_baseline(prompt):
     start_load = time.time()
 
     tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
-    model = AutoModelForCausalLM.from_pretrained(
-        "distilgpt2",
-        dtype=torch.float16,
-        device_map="auto"
-    )
+    #model = AutoModelForCausalLM.from_pretrained(
+    #    "distilgpt2",
+    #    dtype=torch.float16,
+    #    device_map="auto"
+    #)
+    model = AutoModelForCausalLM.from_pretrained("distilgpt2")
 
     load_time = time.time() - start_load
     print(f"Model loaded in {load_time:.2f} seconds.\n")
 
     # Prepare inputs
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    #inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    inputs = tokenizer(prompt, return_tensors="pt")
 
     print("Generating with quantized cache...")
     start_gen = time.time()
