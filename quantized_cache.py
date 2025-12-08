@@ -39,7 +39,7 @@ def run_baseline(prompt):
     gen_time = time.time() - start_gen
 
     decoded = tokenizer.decode(output[0], skip_special_tokens=True)
-    return decoded
+    #return decoded
     print("\n=== Generated Output ===")
     print(decoded)
     print("========================\n")
